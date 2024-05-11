@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sci-Fi Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="startPage">
+        <h1>Welcome to Sci-Fi Chat!</h1>
+        <input type="text" id="usernameInput" placeholder="Enter your username">
+        <button onclick="enterChat()">Enter Chat</button>
+    </div>
+
+    <div id="chatPage" style="display: none;">
+        <div id="chatMessages"></div>
+        <input type="text" id="messageInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
